@@ -30,7 +30,7 @@ echo "Repository LARS clonata con successo!"
 
 echo "Installazione delle dipendenze..."
 
-composer install
+composer install --no-interaction
 
 cp .env.example .env
 sed -i '' "s/APP_NAME=Laravel/APP_NAME=$PROJECT_NAME/g" .env
