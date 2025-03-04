@@ -39,6 +39,7 @@ if ! command -v npm &>/dev/null; then
 fi
 
 echo "Installazione Lars..."
+curl -s https://raw.githubusercontent.com/andreaterminivisia/larsinstaller/refs/heads/main/lars.sh -o lars.sh
 chmod +x lars.sh
 sudo mv lars.sh /usr/local/bin/lars
 echo "Installazione completata!"
