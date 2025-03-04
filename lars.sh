@@ -35,7 +35,7 @@ composer install
 cp .env.example .env
 sed -i '' "s/APP_NAME=Laravel/APP_NAME=$PROJECT_NAME/g" .env
 
-php artisan migrate
+php artisan migrate --no-interaction
 
 php artisan key:generate
 php artisan passport:client --password --no-interaction > passport_client.txt
